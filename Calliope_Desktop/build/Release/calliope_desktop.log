@@ -1,0 +1,10 @@
+[2026-04-30 13:00:54] Application starting
+[2026-04-30 13:00:54] Listening on TCP port 4010
+[2026-04-30 13:00:54] Transfer server started
+[2026-04-30 13:00:54] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:00:55] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:08:00] Application starting
+[2026-04-30 13:08:00] Listening on TCP port 4010
+[2026-04-30 13:08:00] Transfer server started
+[2026-04-30 13:08:00] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:08:00] Loopback capture started with defaultPeriod=100000 minPeriod=30000

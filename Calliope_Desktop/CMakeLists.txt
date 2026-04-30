@@ -13,15 +13,9 @@ add_executable(
     WIN32
     main.cpp
     audio_capture.cpp
-    transfer.cpp)
+    transfer.cpp
+    app.rc)
 
 if (WIN32)
-    set(CALLIOPE_LOGO_SOURCE "${CMAKE_SOURCE_DIR}/../Calliope_Logo.png")
-    add_custom_command(
-        TARGET Calliope_Desktop POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            "${CALLIOPE_LOGO_SOURCE}"
-            "$<TARGET_FILE_DIR:Calliope_Desktop>/Calliope_Logo.png")
-
-    target_link_libraries(Calliope_Desktop PRIVATE ole32 uuid ws2_32 shell32 gdiplus)
+    target_link_libraries(Calliope_Desktop PRIVATE ole32 uuid ws2_32 shell32)
 endif()

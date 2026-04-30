@@ -11,6 +11,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -60,6 +61,7 @@ class MainActivity : ComponentActivity() {
     private var streamJob: Job? = null
     private val latencyMeasurementEnabled = AtomicBoolean(false)
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -220,6 +222,7 @@ class MainActivity : ComponentActivity() {
             ?.firstOrNull { !it.startsWith("127.") }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun streamAudio(host: String) {
         Socket().use { socket ->
             socket.tcpNoDelay = true

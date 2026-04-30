@@ -1,7 +1,5 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-#include <objidl.h>
-#include <gdiplus.h>
 #include <shellapi.h>
 
 #include "audio_capture.h"
@@ -12,13 +10,12 @@
 #include <mutex>
 #include <string>
 
-using namespace Gdiplus;
-
 namespace {
 
 constexpr UINT kTrayIconId = 1001;
 constexpr UINT kTrayCallbackMessage = WM_APP + 1;
 constexpr UINT kMenuExitId = 2001;
+constexpr UINT kAppIconResourceId = 101;
 constexpr wchar_t kLogFileName[] = L"calliope_desktop.log";
 
 void logLine(const std::string& message) {
@@ -67,58 +64,7 @@ private:
 
 AppController g_app;
 NOTIFYICONDATAW g_trayIcon{};
-ULONG_PTR g_gdiplusToken = 0;
 HICON g_appIcon = nullptr;
-
-std::wstring getExecutableDirectory() {
-    wchar_t path[MAX_PATH]{};
-    const DWORD len = GetModuleFileNameW(nullptr, path, MAX_PATH);
-    std::wstring fullPath(path, len);
-    const size_t slash = fullPath.find_last_of(L"\\/");
-    if (slash == std::wstring::npos) {
-        return L".";
-    }
-    return fullPath.substr(0, slash);
-}
-
-std::wstring getLogoPath() {
-    return getExecutableDirectory() + L"\\Calliope_Logo.png";
-}
-
-bool initGdiplus() {
-    GdiplusStartupInput input;
-    return GdiplusStartup(&g_gdiplusToken, &input, nullptr) == Ok;
-}
-
-void shutdownGdiplus() {
-    if (g_appIcon) {
-        DestroyIcon(g_appIcon);
-        g_appIcon = nullptr;
-    }
-    if (g_gdiplusToken != 0) {
-        GdiplusShutdown(g_gdiplusToken);
-        g_gdiplusToken = 0;
-    }
-}
-
-HICON loadIconFromPng(const std::wstring& path, int size) {
-    Bitmap source(path.c_str());
-    if (source.GetLastStatus() != Ok) {
-        return nullptr;
-    }
-
-    Bitmap resized(size, size, PixelFormat32bppARGB);
-    Graphics graphics(&resized);
-    graphics.SetInterpolationMode(InterpolationModeHighQualityBicubic);
-    graphics.Clear(Color(0, 0, 0, 0));
-    graphics.DrawImage(&source, 0, 0, size, size);
-
-    HICON icon = nullptr;
-    if (resized.GetHICON(&icon) != Ok) {
-        return nullptr;
-    }
-    return icon;
-}
 
 void removeTrayIcon() {
     Shell_NotifyIconW(NIM_DELETE, &g_trayIcon);
@@ -182,8 +128,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
 int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int) {
     logLine("Application starting");
-    initGdiplus();
-    g_appIcon = loadIconFromPng(getLogoPath(), 256);
+    g_appIcon = static_cast<HICON>(
+        LoadImageW(instance, MAKEINTRESOURCEW(kAppIconResourceId), IMAGE_ICON, 256, 256, LR_DEFAULTCOLOR));
+    if (!g_appIcon) {
+        g_appIcon = LoadIcon(nullptr, IDI_APPLICATION);
+    }
 
     const wchar_t* className = L"CalliopeTrayClass";
     WNDCLASSEXW wc{};
@@ -196,7 +145,6 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int) {
 
     if (!RegisterClassExW(&wc)) {
         logLine("RegisterClassW failed");
-        shutdownGdiplus();
         return 1;
     }
 
@@ -216,7 +164,6 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int) {
 
     if (!hwnd) {
         logLine("CreateWindowExW failed");
-        shutdownGdiplus();
         return 1;
     }
 
@@ -233,6 +180,9 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE, PWSTR, int) {
         DispatchMessageW(&msg);
     }
 
-    shutdownGdiplus();
+    if (g_appIcon) {
+        DestroyIcon(g_appIcon);
+        g_appIcon = nullptr;
+    }
     return static_cast<int>(msg.wParam);
 }
