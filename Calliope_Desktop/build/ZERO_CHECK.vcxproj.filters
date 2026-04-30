@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\My_Files\Work\Projects\Shared\Calliope\Calliope_Desktop\build\CMakeFiles\7201fe8c3c656c7149a7fb482c0b449f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7BA6D876-D03E-304D-8238-0E78D7295496}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

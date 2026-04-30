@@ -1,0 +1,1465 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      .NET Framework için MSBuild sürüm 18.0.5+e22287bf1
+      Oluşturma başlatıldı: 29.04.2026 17:25:42.
+      
+      1 düğümünde "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.vcxproj" projesi (varsayılan hedefler).
+      PrepareForBuild:
+        "Debug\\" dizini oluşturuluyor.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        "Debug\\CompilerIdC.tlog\\" dizini oluşturuluyor.
+      InitializeBuildStatus:
+        "AlwaysCreate" belirtildiği için "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" oluşturuluyor.
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" öğesine erişiliyor.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" komutundan 9009 koduyla çıkıldı.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" dosyası siliniyor.
+        "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate" öğesine erişiliyor.
+      "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.vcxproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+      
+      Oluşturma başarılı oldu.
+          0 Uyarı
+          0 Hata
+      
+      Geçen Süre 00:00:01.23
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/4.2.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link.com"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link.exe"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/GitHub CLI/lld-link.com"
+      - "C:/Program Files/GitHub CLI/lld-link.exe"
+      - "C:/Program Files/GitHub CLI/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link.com"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link"
+      - "C:/My_Files/Tools/vcpkg/lld-link.com"
+      - "C:/My_Files/Tools/vcpkg/lld-link.exe"
+      - "C:/My_Files/Tools/vcpkg/lld-link"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link.com"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link.exe"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.exe"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/mt.com"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/mt.exe"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/mt"
+      - "C:/My_Files/Work/IDEs/Windsurf/mt.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/mt.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/mt"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/GitHub CLI/mt.com"
+      - "C:/Program Files/GitHub CLI/mt.exe"
+      - "C:/Program Files/GitHub CLI/mt"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/mt.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/mt.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/mt"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/mt.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/mt.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/mt"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/mt.com"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/mt.exe"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/mt"
+      - "C:/My_Files/Tools/vcpkg/mt.com"
+      - "C:/My_Files/Tools/vcpkg/mt.exe"
+      - "C:/My_Files/Tools/vcpkg/mt"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/mt.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/mt.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/mt"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/mt.com"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/mt.exe"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/mt"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/mt.com"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/mt.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/mt"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/mt.com"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/mt.exe"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/mt"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/mt.com"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/mt.exe"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
+    found: "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      .NET Framework için MSBuild sürüm 18.0.5+e22287bf1
+      Oluşturma başlatıldı: 29.04.2026 17:25:44.
+      
+      1 düğümünde "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" projesi (varsayılan hedefler).
+      PrepareForBuild:
+        "Debug\\" dizini oluşturuluyor.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        "Debug\\CompilerIdCXX.tlog\\" dizini oluşturuluyor.
+      InitializeBuildStatus:
+        "AlwaysCreate" belirtildiği için "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" oluşturuluyor.
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" öğesine erişiliyor.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" komutundan 9009 koduyla çıkıldı.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" dosyası siliniyor.
+        "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate" öğesine erişiliyor.
+      "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+      
+      Oluşturma başarılı oldu.
+          0 Uyarı
+          0 Hata
+      
+      Geçen Süre 00:00:00.75
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/4.2.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+    searched_directories:
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link.com"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link.exe"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/lld-link"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/GitHub CLI/lld-link.com"
+      - "C:/Program Files/GitHub CLI/lld-link.exe"
+      - "C:/Program Files/GitHub CLI/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/lld-link"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link.com"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/lld-link"
+      - "C:/My_Files/Tools/vcpkg/lld-link.com"
+      - "C:/My_Files/Tools/vcpkg/lld-link.exe"
+      - "C:/My_Files/Tools/vcpkg/lld-link"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/lld-link"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/lld-link"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/lld-link"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/lld-link"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link.com"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link.exe"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:580 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/"
+      - "C:/My_Files/Work/IDEs/Windsurf/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/"
+      - "C:/My_Files/Tools/vcpkg/"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/Calliope_Desktop/bin/"
+      - "C:/Program Files (x86)/Calliope_Desktop/sbin/"
+      - "C:/Program Files (x86)/Calliope_Desktop/"
+    searched_directories:
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/rc.com"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/rc.exe"
+      - "C:/Users/USER/.codex/tmp/arg0/codex-arg0sIc3Dn/rc"
+      - "C:/My_Files/Work/IDEs/Windsurf/rc.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/rc.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/rc"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/GitHub CLI/rc.com"
+      - "C:/Program Files/GitHub CLI/rc.exe"
+      - "C:/Program Files/GitHub CLI/rc"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/rc.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/rc.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/Scripts/rc"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/rc.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/rc.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python314/rc"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/rc.com"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/rc.exe"
+      - "C:/My_Files/Work/IDEs/IntelliJ IDEA 2025.3.1/bin/rc"
+      - "C:/My_Files/Tools/vcpkg/rc.com"
+      - "C:/My_Files/Tools/vcpkg/rc.exe"
+      - "C:/My_Files/Tools/vcpkg/rc"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/rc.com"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/rc.exe"
+      - "C:/My_Files/Work/IDEs/Windsurf/bin/rc"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/rc.com"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/rc.exe"
+      - "C:/Program Files/JetBrains/CLion 2026.1/bin/rc"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/rc.com"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/rc.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2026.1/bin/rc"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/rc.com"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/rc.exe"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2026.1.0.1/bin/rc"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/rc.com"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/rc.exe"
+      - "C:/Users/USER/.windsurf/extensions/openai.chatgpt-26.422.71525-win32-x64/bin/windows-x86_64/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/Calliope_Desktop/bin/rc.com"
+      - "C:/Program Files (x86)/Calliope_Desktop/bin/rc.exe"
+      - "C:/Program Files (x86)/Calliope_Desktop/bin/rc"
+      - "C:/Program Files (x86)/Calliope_Desktop/sbin/rc.com"
+      - "C:/Program Files (x86)/Calliope_Desktop/sbin/rc.exe"
+      - "C:/Program Files (x86)/Calliope_Desktop/sbin/rc"
+      - "C:/Program Files (x86)/Calliope_Desktop/rc.com"
+      - "C:/Program Files (x86)/Calliope_Desktop/rc.exe"
+      - "C:/Program Files (x86)/Calliope_Desktop/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\USER\\.codex\\tmp\\arg0\\codex-arg0sIc3Dn"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\My_Files\\Work\\IDEs\\IntelliJ IDEA 2025.3.1\\bin"
+        - "C:\\My_Files\\Tools\\vcpkg"
+        - "C:\\My_Files\\Work\\IDEs\\Windsurf\\bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2026.1\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2026.1.0.1\\bin"
+        - "c:\\Users\\USER\\.windsurf\\extensions\\openai.chatgpt-26.422.71525-win32-x64\\bin\\windows-x86_64"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Calliope_Desktop"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Calliope_Desktop"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-gkrvu7"
+      binary: "C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-gkrvu7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-gkrvu7'
+        
+        Run Build Command(s): C:/My_Files/Work/IDEs/Visual_Studio/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_54610.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        .NET Framework i├ğin MSBuild s├╝r├╝m 18.0.5+e22287bf1
+        Olu┼şturma ba┼şlat─▒ld─▒: 29.04.2026 17:25:45.
+        
+        1 d├╝─ş├╝m├╝nde "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\cmTC_54610.vcxproj" projesi (varsay─▒lan hedefler).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\" dizini olu┼şturuluyor.
+          "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\" dizini olu┼şturuluyor.
+        InitializeBuildStatus:
+          "AlwaysCreate" belirtildi─şi i├ğin "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\unsuccessfulbuild" olu┼şturuluyor.
+          "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\unsuccessfulbuild" ├Â─şesine eri┼şiliyor.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_54610.dir\\Debug\\\\" /Fd"cmTC_54610.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          x64 i├ğin Microsoft (R) C/C++ ─░yile┼ştirmeli Derleyicisi S├╝r├╝m 19.50.35721
+          Telif Hakk─▒ (C) Microsoft Corporation. T├╝m haklar─▒ sakl─▒d─▒r.
+          cl /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_54610.dir\\Debug\\\\" /Fd"cmTC_54610.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\cmTC_54610.exe" /INCREMENTAL /ILK:"cmTC_54610.dir\\Debug\\cmTC_54610.ilk" /NOLOGO /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-gkrvu7/Debug/cmTC_54610.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-gkrvu7/Debug/cmTC_54610.lib" /MACHINE:X64 cmTC_54610.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_54610.vcxproj -> C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\cmTC_54610.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\cmTC_54610.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\cmTC_54610.write.1u.tlog" "cmTC_54610.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\cmTC_54610.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\cmTC_54610.write.1u.tlog" "cmTC_54610.dir\\Debug\\vcpkg.applocal.log"" komutundan 9009 koduyla ├ğ─▒k─▒ld─▒.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\Debug\\cmTC_54610.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\cmTC_54610.write.1u.tlog" "cmTC_54610.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\unsuccessfulbuild" dosyas─▒ siliniyor.
+          "cmTC_54610.dir\\Debug\\cmTC_54610.tlog\\cmTC_54610.lastbuildstate" ├Â─şesine eri┼şiliyor.
+        "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkrvu7\\cmTC_54610.vcxproj" Projesini Olu┼şturma ─░┼şlemi Tamamland─▒ (varsay─▒lan hedefler).
+        
+        Olu┼şturma ba┼şar─▒l─▒ oldu.
+            0 Uyar─▒
+            0 Hata
+        
+        Ge├ğen S├╝re 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35721.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-nxsla2"
+      binary: "C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-nxsla2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-nxsla2'
+        
+        Run Build Command(s): C:/My_Files/Work/IDEs/Visual_Studio/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3fdb3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        .NET Framework i├ğin MSBuild s├╝r├╝m 18.0.5+e22287bf1
+        Olu┼şturma ba┼şlat─▒ld─▒: 29.04.2026 17:25:46.
+        
+        1 d├╝─ş├╝m├╝nde "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\cmTC_3fdb3.vcxproj" projesi (varsay─▒lan hedefler).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\" dizini olu┼şturuluyor.
+          "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\" dizini olu┼şturuluyor.
+        InitializeBuildStatus:
+          "AlwaysCreate" belirtildi─şi i├ğin "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\unsuccessfulbuild" olu┼şturuluyor.
+          "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\unsuccessfulbuild" ├Â─şesine eri┼şiliyor.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_3fdb3.dir\\Debug\\\\" /Fd"cmTC_3fdb3.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          x64 i├ğin Microsoft (R) C/C++ ─░yile┼ştirmeli Derleyicisi S├╝r├╝m 19.50.35721
+          Telif Hakk─▒ (C) Microsoft Corporation. T├╝m haklar─▒ sakl─▒d─▒r.
+          cl /c /I"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_3fdb3.dir\\Debug\\\\" /Fd"cmTC_3fdb3.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\My_Files\\Work\\IDEs\\Visual_Studio\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\cmTC_3fdb3.exe" /INCREMENTAL /ILK:"cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.ilk" /NOLOGO /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-nxsla2/Debug/cmTC_3fdb3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/My_Files/Work/Projects/Shared/Calliope/Calliope_Desktop/build/CMakeFiles/CMakeScratch/TryCompile-nxsla2/Debug/cmTC_3fdb3.lib" /MACHINE:X64 cmTC_3fdb3.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_3fdb3.vcxproj -> C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\cmTC_3fdb3.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\cmTC_3fdb3.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\cmTC_3fdb3.write.1u.tlog" "cmTC_3fdb3.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\cmTC_3fdb3.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\cmTC_3fdb3.write.1u.tlog" "cmTC_3fdb3.dir\\Debug\\vcpkg.applocal.log"" komutundan 9009 koduyla ├ğ─▒k─▒ld─▒.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\My_Files\\Tools\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\Debug\\cmTC_3fdb3.exe" "C:\\My_Files\\Tools\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\cmTC_3fdb3.write.1u.tlog" "cmTC_3fdb3.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\unsuccessfulbuild" dosyas─▒ siliniyor.
+          "cmTC_3fdb3.dir\\Debug\\cmTC_3fdb3.tlog\\cmTC_3fdb3.lastbuildstate" ├Â─şesine eri┼şiliyor.
+        "C:\\My_Files\\Work\\Projects\\Shared\\Calliope\\Calliope_Desktop\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxsla2\\cmTC_3fdb3.vcxproj" Projesini Olu┼şturma ─░┼şlemi Tamamland─▒ (varsay─▒lan hedefler).
+        
+        Olu┼şturma ba┼şar─▒l─▒ oldu.
+            0 Uyar─▒
+            0 Hata
+        
+        Ge├ğen S├╝re 00:00:00.73
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/My_Files/Work/IDEs/Visual_Studio/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35721.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...

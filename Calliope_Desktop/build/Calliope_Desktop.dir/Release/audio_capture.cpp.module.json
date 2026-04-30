@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Calliope_Desktop.dir\\Release\\audio_capture.obj",
+            "outputs": [
+                "Calliope_Desktop.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

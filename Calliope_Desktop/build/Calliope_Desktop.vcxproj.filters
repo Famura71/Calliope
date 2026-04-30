@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\My_Files\Work\Projects\Shared\Calliope\Calliope_Desktop\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\My_Files\Work\Projects\Shared\Calliope\Calliope_Desktop\audio_capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\My_Files\Work\Projects\Shared\Calliope\Calliope_Desktop\transfer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\My_Files\Work\Projects\Shared\Calliope\Calliope_Desktop\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{00DB4110-69D9-3EA3-9381-FEB6C794B6F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
