@@ -37,6 +37,22 @@ cmake --build Calliope_Desktop/build --config Release
 
 `--attach-virtual` / `--detach-virtual` typically require running the app elevated (`Run as Administrator`).
 
+## USB mode
+
+The mobile app can also connect over USB by using Android's ADB reverse tunnel.
+
+1. Connect the phone with a USB cable.
+2. Make sure USB debugging is enabled.
+3. Run this on the PC:
+
+```powershell
+adb reverse tcp:4010 tcp:4010
+```
+
+4. In the mobile app, switch to `USB` mode and tap `Baglan`.
+
+The desktop app now tries to run that reverse command automatically on startup if `adb` is available in `PATH` or in a standard Android SDK location. It retries for a short while in case the phone is plugged in a little later. If it still cannot find `adb`, Wi-Fi mode keeps working unchanged and you can still run the command manually.
+
 ## Virtual audio driver source
 
 Repository is cloned under:

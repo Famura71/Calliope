@@ -6,9 +6,11 @@
 #include "transfer.h"
 
 #include <chrono>
+#include <atomic>
 #include <fstream>
 #include <mutex>
 #include <string>
+#include <thread>
 
 namespace {
 
@@ -17,6 +19,94 @@ constexpr UINT kTrayCallbackMessage = WM_APP + 1;
 constexpr UINT kMenuExitId = 2001;
 constexpr UINT kAppIconResourceId = 101;
 constexpr wchar_t kLogFileName[] = L"calliope_desktop.log";
+constexpr wchar_t kAdbReverseArgs[] = L"reverse tcp:4010 tcp:4010";
+
+bool fileExists(const std::wstring& path) {
+    const DWORD attributes = GetFileAttributesW(path.c_str());
+    return attributes != INVALID_FILE_ATTRIBUTES &&
+           (attributes & FILE_ATTRIBUTE_DIRECTORY) == 0;
+}
+
+std::wstring joinPath(const std::wstring& left, const std::wstring& right) {
+    if (left.empty()) {
+        return right;
+    }
+    if (left.back() == L'\\' || left.back() == L'/') {
+        return left + right;
+    }
+    return left + L'\\' + right;
+}
+
+std::wstring getExecutableDirectory() {
+    wchar_t buffer[MAX_PATH]{};
+    const DWORD len = GetModuleFileNameW(nullptr, buffer, MAX_PATH);
+    if (len == 0 || len >= MAX_PATH) {
+        return L"";
+    }
+
+    std::wstring path(buffer, len);
+    const size_t pos = path.find_last_of(L"\\/");
+    if (pos == std::wstring::npos) {
+        return L"";
+    }
+    return path.substr(0, pos);
+}
+
+std::wstring getParentDirectory(const std::wstring& path) {
+    if (path.empty()) {
+        return L"";
+    }
+
+    const size_t pos = path.find_last_of(L"\\/");
+    if (pos == std::wstring::npos) {
+        return L"";
+    }
+    return path.substr(0, pos);
+}
+
+std::wstring findAdbExecutable() {
+    const std::wstring exeDir = getExecutableDirectory();
+    const std::wstring exeParent = getParentDirectory(exeDir);
+    const std::wstring exeGrandParent = getParentDirectory(exeParent);
+    std::wstring roots[] = {
+        exeDir.empty() ? L"" : joinPath(exeDir, L"tools"),
+        exeDir.empty() ? L"" : exeDir,
+        exeParent.empty() ? L"" : joinPath(exeParent, L"tools"),
+        exeParent.empty() ? L"" : exeParent,
+        exeGrandParent.empty() ? L"" : joinPath(exeGrandParent, L"tools"),
+        exeGrandParent.empty() ? L"" : exeGrandParent,
+        [] {
+            wchar_t buffer[MAX_PATH]{};
+            const DWORD len = GetEnvironmentVariableW(L"ANDROID_SDK_ROOT", buffer, MAX_PATH);
+            return len > 0 && len < MAX_PATH ? std::wstring(buffer, len) : std::wstring();
+        }(),
+        [] {
+            wchar_t buffer[MAX_PATH]{};
+            const DWORD len = GetEnvironmentVariableW(L"ANDROID_HOME", buffer, MAX_PATH);
+            return len > 0 && len < MAX_PATH ? std::wstring(buffer, len) : std::wstring();
+        }(),
+        [] {
+            wchar_t buffer[MAX_PATH]{};
+            const DWORD len = GetEnvironmentVariableW(L"LOCALAPPDATA", buffer, MAX_PATH);
+            return len > 0 && len < MAX_PATH ? joinPath(std::wstring(buffer, len), L"Android\\Sdk") : std::wstring();
+        }(),
+        L"C:\\Program Files\\Android\\Android Studio",
+        L"C:\\Program Files (x86)\\Android\\Android Studio",
+    };
+
+    for (const auto& root : roots) {
+        if (root.empty()) {
+            continue;
+        }
+
+        const std::wstring candidate = joinPath(joinPath(root, L"platform-tools"), L"adb.exe");
+        if (fileExists(candidate)) {
+            return candidate;
+        }
+    }
+
+    return L"";
+}
 
 void logLine(const std::string& message) {
     static std::mutex logMutex;
@@ -37,6 +127,50 @@ void logLine(const std::string& message) {
     out << "[" << buffer << "] " << message << '\n';
 }
 
+bool tryRunAdbReverse() {
+    const std::wstring adbPath = findAdbExecutable();
+    STARTUPINFOW startupInfo{};
+    startupInfo.cb = sizeof(startupInfo);
+    startupInfo.dwFlags = STARTF_USESHOWWINDOW;
+    startupInfo.wShowWindow = SW_HIDE;
+
+    PROCESS_INFORMATION processInfo{};
+    std::wstring commandLine = adbPath.empty() ? L"adb reverse tcp:4010 tcp:4010" : kAdbReverseArgs;
+    const wchar_t* applicationName = adbPath.empty() ? nullptr : adbPath.c_str();
+
+    const BOOL created = CreateProcessW(
+        applicationName,
+        commandLine.data(),
+        nullptr,
+        nullptr,
+        FALSE,
+        CREATE_NO_WINDOW,
+        nullptr,
+        nullptr,
+        &startupInfo,
+        &processInfo);
+
+    if (!created) {
+        logLine("adb reverse not started: adb not found or failed to launch");
+        return false;
+    }
+
+    WaitForSingleObject(processInfo.hProcess, INFINITE);
+
+    DWORD exitCode = 1;
+    GetExitCodeProcess(processInfo.hProcess, &exitCode);
+    CloseHandle(processInfo.hThread);
+    CloseHandle(processInfo.hProcess);
+
+    if (exitCode != 0) {
+        logLine("adb reverse exited with code " + std::to_string(exitCode));
+        return false;
+    }
+
+    logLine("adb reverse tcp:4010 tcp:4010 completed");
+    return true;
+}
+
 class AppController {
 public:
     AppController()
@@ -45,14 +179,34 @@ public:
               [](const std::string& message) { logLine(message); },
               [this](AudioFrame frame) { transfer_.sendAudioFrame(frame); }) {}
 
+    ~AppController() {
+        stop();
+    }
+
     bool start() {
         if (!transfer_.start()) {
             return false;
         }
+        stopRequested_.store(false);
+        adbReverseThread_ = std::thread([this]() {
+            for (int attempt = 1; attempt <= 30 && !stopRequested_.load(); ++attempt) {
+                if (tryRunAdbReverse()) {
+                    return;
+                }
+                if (stopRequested_.load()) {
+                    return;
+                }
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+            }
+        });
         return capture_.start();
     }
 
     void stop() {
+        stopRequested_.store(true);
+        if (adbReverseThread_.joinable()) {
+            adbReverseThread_.join();
+        }
         capture_.stop();
         transfer_.stop();
     }
@@ -60,6 +214,8 @@ public:
 private:
     TransferServer transfer_;
     AudioCaptureService capture_;
+    std::atomic<bool> stopRequested_{false};
+    std::thread adbReverseThread_;
 };
 
 AppController g_app;

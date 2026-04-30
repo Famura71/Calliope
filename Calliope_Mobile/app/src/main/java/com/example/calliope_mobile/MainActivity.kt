@@ -56,6 +56,11 @@ private const val LATENCY_LOG_TAG = "CalliopeLatency"
 private const val MAX_ACCEPTABLE_LATENCY_US = 35_000L
 private const val STARTUP_DROP_LATENCY_US = 60_000L
 
+private enum class ConnectionMode {
+    WIFI,
+    USB,
+}
+
 class MainActivity : ComponentActivity() {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     private var streamJob: Job? = null
@@ -71,6 +76,7 @@ class MainActivity : ComponentActivity() {
                 var status by remember { mutableStateOf("Hazir") }
                 var connected by remember { mutableStateOf(false) }
                 var latencyEnabled by remember { mutableStateOf(false) }
+                var connectionMode by remember { mutableStateOf(ConnectionMode.WIFI) }
 
                 Column(
                     modifier = Modifier
@@ -79,35 +85,73 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
                     Text("Calliope Mobile Receiver", style = MaterialTheme.typography.titleMedium)
+                    Text("Baglanti modu")
+                    Button(
+                        onClick = {
+                            connectionMode = ConnectionMode.WIFI
+                            if (host == "127.0.0.1") {
+                                host = ""
+                            }
+                            status = "Wi-Fi modu aktif"
+                        },
+                        enabled = !connected
+                    ) {
+                        Text(if (connectionMode == ConnectionMode.WIFI) "Wi-Fi secili" else "Wi-Fi moduna gec")
+                    }
+                    Button(
+                        onClick = {
+                            connectionMode = ConnectionMode.USB
+                            host = "127.0.0.1"
+                            status = "USB modu aktif"
+                        },
+                        enabled = !connected
+                    ) {
+                        Text(if (connectionMode == ConnectionMode.USB) "USB secili" else "USB moduna gec")
+                    }
+                    if (connectionMode == ConnectionMode.USB) {
+                        Text("USB modu icin PC tarafinda once `adb reverse tcp:4010 tcp:4010` calistirin.")
+                        Text("Baglanti localhost uzerinden acilir.")
+                    }
                     OutlinedTextField(
                         value = host,
                         onValueChange = { host = it },
                         modifier = Modifier.fillMaxWidth(),
-                        label = { Text("PC IP") },
-                        placeholder = { Text("Ornek: 192.168.1.25") },
+                        label = { Text(if (connectionMode == ConnectionMode.USB) "Hedef host" else "PC IP") },
+                        placeholder = {
+                            Text(
+                                if (connectionMode == ConnectionMode.USB) {
+                                    "127.0.0.1"
+                                } else {
+                                    "Ornek: 192.168.1.25"
+                                }
+                            )
+                        },
+                        enabled = connectionMode == ConnectionMode.WIFI,
                         singleLine = true
                     )
                     Text("Port: $PORT")
                     Text("Durum: $status")
                     Text("Latency olcumu: ${if (latencyEnabled) "Acik" else "Kapali"}")
-                    Button(
-                        onClick = {
-                            if (connected) return@Button
-                            status = "IP aranıyor..."
-                            streamJob = scope.launch {
-                                val found = scanForServerHost()
-                                runOnUiThread {
-                                    if (found != null) {
-                                        host = found
-                                        status = "IP bulundu: $found"
-                                    } else {
-                                        status = "Aynı ağda Calliope bulunamadı"
+                    if (connectionMode == ConnectionMode.WIFI) {
+                        Button(
+                            onClick = {
+                                if (connected) return@Button
+                                status = "IP araniyor..."
+                                streamJob = scope.launch {
+                                    val found = scanForServerHost()
+                                    runOnUiThread {
+                                        if (found != null) {
+                                            host = found
+                                            status = "IP bulundu: $found"
+                                        } else {
+                                            status = "Ayni agda Calliope bulunamadi"
+                                        }
                                     }
                                 }
                             }
+                        ) {
+                            Text("IP Otomatik Bul")
                         }
-                    ) {
-                        Text("IP Otomatik Bul")
                     }
                     Button(
                         onClick = {
@@ -125,14 +169,18 @@ class MainActivity : ComponentActivity() {
                     Button(
                         onClick = {
                             if (!connected) {
-                                if (host.isBlank()) {
+                                val targetHost = when (connectionMode) {
+                                    ConnectionMode.WIFI -> host
+                                    ConnectionMode.USB -> "127.0.0.1"
+                                }
+                                if (targetHost.isBlank()) {
                                     status = "Lutfen PC IP gir"
                                     return@Button
                                 }
                                 connected = true
                                 status = "Baglaniyor..."
                                 streamJob = scope.launch {
-                                    runCatching { streamAudio(host) }
+                                    runCatching { streamAudio(targetHost) }
                                         .onSuccess {
                                             runOnUiThread {
                                                 status = "Baglanti kapandi"
@@ -408,3 +456,4 @@ class MainActivity : ComponentActivity() {
         scope.cancel()
     }
 }
+

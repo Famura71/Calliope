@@ -8,3 +8,62 @@
 [2026-04-30 13:08:00] Transfer server started
 [2026-04-30 13:08:00] Mix format: tag=65534 channels=2 rate=48000 bits=32
 [2026-04-30 13:08:00] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:10:04] Client connected
+[2026-04-30 13:10:04] Client control loop ended
+[2026-04-30 13:10:07] Client connected
+[2026-04-30 13:10:07] Client sync completed, enabling audio stream
+[2026-04-30 13:11:11] Client control loop ended
+[2026-04-30 13:11:11] Transfer server stopped
+[2026-04-30 13:19:32] Application starting
+[2026-04-30 13:19:32] Listening on TCP port 4010
+[2026-04-30 13:19:32] Transfer server started
+[2026-04-30 13:19:32] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:19:32] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:19:53] Client connected
+[2026-04-30 13:19:53] Client control loop ended
+[2026-04-30 13:19:56] Client connected
+[2026-04-30 13:19:56] Client sync completed, enabling audio stream
+[2026-04-30 13:34:33] Client control loop ended
+[2026-04-30 13:34:33] Transfer server stopped
+[2026-04-30 13:53:19] Application starting
+[2026-04-30 13:53:19] Listening on TCP port 4010
+[2026-04-30 13:53:19] Transfer server started
+[2026-04-30 13:53:19] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:53:19] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:53:19] adb reverse exited with code 1
+[2026-04-30 13:53:21] adb reverse exited with code 1
+[2026-04-30 13:53:23] adb reverse exited with code 1
+[2026-04-30 13:53:25] adb reverse exited with code 1
+[2026-04-30 13:53:27] adb reverse exited with code 1
+[2026-04-30 13:53:29] adb reverse exited with code 1
+[2026-04-30 13:53:31] adb reverse exited with code 1
+[2026-04-30 13:53:33] adb reverse exited with code 1
+[2026-04-30 13:53:35] adb reverse exited with code 1
+[2026-04-30 13:53:36] Application starting
+[2026-04-30 13:53:36] Listening on TCP port 4010
+[2026-04-30 13:53:36] Transfer server started
+[2026-04-30 13:53:36] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:53:36] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:53:36] adb reverse exited with code 1
+[2026-04-30 13:53:37] adb reverse exited with code 1
+[2026-04-30 13:53:38] adb reverse exited with code 1
+[2026-04-30 13:53:39] adb reverse exited with code 1
+[2026-04-30 13:53:40] adb reverse exited with code 1
+[2026-04-30 13:53:42] Transfer server stopped
+[2026-04-30 13:53:43] Transfer server stopped
+[2026-04-30 13:53:44] Application starting
+[2026-04-30 13:53:44] Listening on TCP port 4010
+[2026-04-30 13:53:44] Transfer server started
+[2026-04-30 13:53:44] Mix format: tag=65534 channels=2 rate=48000 bits=32
+[2026-04-30 13:53:44] Loopback capture started with defaultPeriod=100000 minPeriod=30000
+[2026-04-30 13:53:44] adb reverse exited with code 1
+[2026-04-30 13:53:46] adb reverse exited with code 1
+[2026-04-30 13:53:48] adb reverse exited with code 1
+[2026-04-30 13:53:50] adb reverse exited with code 1
+[2026-04-30 13:53:52] adb reverse exited with code 1
+[2026-04-30 13:53:54] adb reverse exited with code 1
+[2026-04-30 13:53:57] adb reverse exited with code 1
+[2026-04-30 13:53:59] adb reverse exited with code 1
+[2026-04-30 13:54:01] adb reverse exited with code 1
+[2026-04-30 13:54:03] adb reverse exited with code 1
+[2026-04-30 13:54:05] adb reverse exited with code 1
